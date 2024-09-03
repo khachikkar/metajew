@@ -5,7 +5,7 @@
       "name": "HoloGlow Necklace",
       "price": 150,
       "category": "Necklace",
-      "image": "./src/assets/images/1.jpeg",
+      "image": "/metajew/assets/images/1.jpeg",
       "description": "A sleek choker with embedded holographic gemstones that change color based on your mood, reflecting the neon lights of a futuristic cityscape."
     },
     {
