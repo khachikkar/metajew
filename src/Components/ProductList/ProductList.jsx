@@ -23,7 +23,7 @@ const ProductList = ({data, addtocart, addtofav}) => {
             )
         } )
       
-&&
+||
          
         jew.jewelry.map(item =>{
             return (
