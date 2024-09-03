@@ -1,34 +1,85 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css"
+import Cart from "./Components/Cart/Cart"
+
+import Nav from "./Components/Nav/Nav"
+
+import { Routes, Route } from "react-router-dom"
+import Shop from "./Components/Shop/Shop"
+
+import { useState, useEffect } from "react"
+import axios from "axios"
+import Fav from "./Components/Fav/Fav"
 
 function App() {
-  const [count, setCount] = useState(0)
+
+
+  const [data, setData] =useState([])
+
+  const [basket, setBasket] = useState([])
+
+
+const [fav, setFav] = useState([])
+
+  useEffect(()=>{
+      axios.get(`http://localhost:3008/jewelry`)
+      .then(response => {
+          console.log(response)
+          setData(response.data)
+      })
+  },[])
+
+
+// function to add a product in cart
+
+const addtocart = product => {
+  setBasket(prev=>{
+    let found = prev.find(item=> item.id === product.id)
+    if(!found){
+      console.log("Added", basket)
+
+      return[...prev,{...product, quantity: 1}]
+    }
+    console.log("Added",)
+
+    return prev.map(item=> item.id === product.id ? {...item , quantity: item.quantity +1 } : item )
+  })
+}
+
+
+const addtofav = (data) => {
+ setFav(prev=>{
+  let found = prev.find(item=> item.id === data.id)
+  if(!found){
+    return [...prev, data] 
+  }
+  return prev.map(item=>item.id === data.id ? {...item} : item)
+ })
+};
+
+
+
+
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    
+    <div>
+
+
+<Nav basket={basket} fav={fav} />
+
+
+    <Routes>
+
+<Route path="/cart" element={<Cart basket={basket} setBasket={setBasket}  />}/>
+<Route path="*" element={<Shop data={data} addtocart={addtocart} addtofav={addtofav}/> }/>
+<Route path="/fav" element={<Fav fav={fav} addtocart={addtocart} />}/>
+
+
+    </Routes>
+
+
+    </div>
+   
   )
 }
 

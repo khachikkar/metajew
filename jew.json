@@ -1,0 +1,92 @@
+{
+  "jewelry": [
+    {
+      "id": 1,
+      "name": "HoloGlow Necklace",
+      "price": 150,
+      "category": "Necklace",
+      "image": "./src/assets/images/1.jpeg",
+      "description": "A sleek choker with embedded holographic gemstones that change color based on your mood, reflecting the neon lights of a futuristic cityscape."
+    },
+    {
+      "id": 2,
+      "name": "Quantum Loop Necklace",
+      "price": 200,
+      "category": "Necklace",
+      "image": "./src/assets/images/8.jpeg",
+      "description": "A silver necklace made of quantum particles that seem to float and intertwine, creating a mesmerizing loop around your neck."
+    },
+    {
+      "id": 3,
+      "name": "Celestial Pendant",
+      "price": 175,
+      "category": "Necklace",
+      "image": "./src/assets/images/10.jpeg",
+      "description": "A pendant with a holographic core that displays different celestial bodies depending on the time of day, suspended by an invisible wire."
+    },
+    {
+      "id": 4,
+      "name": "Levitating Diamond Ring",
+      "price": 300,
+      "category": "Ring",
+      "image": "./src/assets/images/6.jpeg",
+      "description": "An interlocking ring with a floating, levitating diamond in the center, surrounded by a magnetic field that creates a mesmerizing light show when moved."
+    },
+    {
+      "id": 5,
+      "name": "Cyber Circuit Ring",
+      "price": 250,
+      "category": "Ring",
+      "image": "./src/assets/images/3.jpeg",
+      "description": "A minimalist ring with embedded micro-circuits that allow communication with AI assistants, combining futuristic design with advanced technology."
+    },
+    {
+      "id": 6,
+      "name": "Aurora Earrings",
+      "price": 180,
+      "category": "Earrings",
+      "image": "./src/assets/images/2.jpeg",
+      "description": "Transparent earrings with crystalline materials that emit soft, pulsating lights, synchronized with the wearer's heartbeat for an elegant space-age look."
+    },
+    {
+      "id": 7,
+      "name": "Starlight Earrings",
+      "price": 195,
+      "category": "Earrings",
+      "image": "./src/assets/images/5.jpeg",
+      "description": "Geometric earrings that display a holographic light show, inspired by the starry skies of distant galaxies, perfect for a night out in a futuristic world."
+    },
+    {
+      "id": 8,
+      "name": "BioLum Cuff",
+      "price": 220,
+      "category": "Bracelet",
+      "image": "./src/assets/images/4.jpeg",
+      "description": "A glowing, iridescent arm cuff with intricate circuitry patterns that respond to touch, allowing the wearer to control smart devices through gestures."
+    },
+    {
+      "id": 9,
+      "name": "Galactic Crown",
+      "price": 500,
+      "category": "Crown",
+      "image": "./src/assets/images/7.jpeg",
+      "description": "A bioluminescent crown that softly glows in the dark, with organic shapes inspired by extraterrestrial flora, designed for a regal, otherworldly look."
+    },
+    {
+      "id": 10,
+      "name": "Magnetic Buckle",
+      "price": 80,
+      "category": "Buckle",
+      "image": "./src/assets/images/11.jpeg",
+      "description": "A futuristic buckle with magnetic properties, allowing for easy adjustments and a secure fit, ideal for space travelers and adventurers."
+    },
+    {
+      "id": 11,
+      "name": "Plasma Belt Buckle",
+      "price": 95,
+      "category": "Buckle",
+      "image": "./src/assets/images/9.jpeg",
+      "description": "A buckle that emits a soft plasma glow, creating a unique and eye-catching accessory for any futuristic outfit."
+    }
+  ]
+}
