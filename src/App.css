@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 *{
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,13 +11,15 @@
   font-style: normal;
 }
 
+
+
 /* All Css is written in here all sections I  separate by parts :) tanks */
 
 
 /* Nav */
 
 .navbar{
-
+margin-bottom: 60px;
   border: 1px solid black;
   height: 60px;
   background-color: white;
@@ -167,6 +170,7 @@ transition: background-color 0.8s ease;
 /* Shop page */
 
 .shop{
+  padding-top: 60px;
   border: 1px solid black;
 }
 
@@ -402,4 +406,100 @@ flex-direction: column;
   .prods{
     flex-direction: column;
   }
+}
+
+
+/* register */
+
+.reg{
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-top: 60px;
+  height: 800px;
+flex-wrap: wrap;
+  
+
+
+}
+.k{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.regcont{
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+ border: 1px solid black;
+gap: 20px;
+align-items: center;
+form{
+  width: 350px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+
+  input{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+  }
+  button{
+    width: 100%;
+  }
+}
+
+.lbuuton{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.terms{
+  display: flex;
+  gap: 10px;
+}
+
+}
+
+.imggg{
+  width: 400px;
+  height: 500px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.errorrs{
+  color: red;
+}
+
+.er{
+  border: 1px solid red;
+  color: red;
+}
+
+@media screen and (max-width:802px) {
+  .reg{
+    height: 100%;
+  }
+  
+}
+
+
+
+
+/* Profile */
+
+.prof{
+  padding-top: 60px;
 }

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+
 import ProductItem from '../ProductItem/ProductItem'
-import axios from 'axios'
+
 
 
 import jew from "../../../jew.json"
@@ -17,13 +17,13 @@ const ProductList = ({data, addtocart, addtofav}) => {
       <div className="prods">
 
       {
-        data && data.map(item =>{
-            return (
-                <ProductItem key={item.id} item={item} addtocart={addtocart} addtofav={addtofav}/>
-            )
-        } )
+        // data && data.map(item =>{
+        //     return (
+        //         <ProductItem key={item.id} item={item} addtocart={addtocart} addtofav={addtofav}/>
+        //     )
+        // } )
       
-||
+
          
         jew.jewelry.map(item =>{
             return (

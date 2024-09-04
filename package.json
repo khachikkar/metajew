@@ -9,6 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "backend": "npx json-server -p 3003 -w jew.json",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist -r https://github.com/khachikkar/metajew.git"
   },

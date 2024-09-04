@@ -36,7 +36,7 @@ const navigate = useNavigate();
       </div>
       <div className='navicons'>
         <CiSearch  onClick={() => setIcon(!icon)} className={icon ? 'active' : ''}  size={24} />
-        <CiUser size={24} />
+        <CiUser onClick={()=>navigate("/register")} size={24} />
      {fav.length ?   <AiFillHeart onClick={()=>navigate("/fav")}  size={24} style={{ color: 'red' }} />  : <CiHeart  onClick={()=>navigate("/fav")} size={24} /> }
         <div onClick={()=>navigate("/cart")} className='cc'> 
           <CiShoppingCart size={24} />

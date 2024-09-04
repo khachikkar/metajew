@@ -9,6 +9,8 @@ import Shop from "./Components/Shop/Shop"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import Fav from "./Components/Fav/Fav"
+import Register from "./Components/Register/Register"
+import UserProfile from "./Components/UserProfile/UserProfile"
 
 function App() {
 
@@ -21,7 +23,7 @@ function App() {
 const [fav, setFav] = useState([])
 
   useEffect(()=>{
-      axios.get(`http://localhost:3008/jewelry`)
+      axios.get(`http://localhost:3003/jewelry`)
       .then(response => {
           console.log(response)
           setData(response.data)
@@ -73,7 +75,8 @@ const addtofav = (data) => {
 <Route path="/cart" element={<Cart basket={basket} setBasket={setBasket}  />}/>
 <Route path="*" element={<Shop data={data} addtocart={addtocart} addtofav={addtofav}/> }/>
 <Route path="/fav" element={<Fav fav={fav} addtocart={addtocart} />}/>
-
+<Route path="/register" element={<Register />}/>
+<Route path="/profile" element={<UserProfile  addtocart={addtocart} addtofav={addtofav} />}/>
 
     </Routes>
 
